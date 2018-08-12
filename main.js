@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
-const commandStrings = require("./commandStrings.js");
+const commands = require("./commands.js");
 
 bot.on('ready', () => {
     console.log('Hello World!');
@@ -16,7 +16,7 @@ bot.on('message', message => {
   const command = args.shift().toLowerCase();
   
   if (commandStrings.command) {
-      message.reply(commandStrings.command);
+      message.reply(commands.command);
   }
 
 });
