@@ -1,5 +1,5 @@
 module.exports = {
-  var help = (
+  /* var help = (
     "Zombies [BOT] created by [Owner] Percy84 and copied by [Copier] TitaniumTahmid" +
     "Credit to LittlePhilip and Skyline294 for informations about weapons, perks and rooms!" +
     ">>> Current commands:" +
@@ -46,5 +46,5 @@ module.exports = {
     ":zombie_zapper: <w zombie_zapper for details" +
     ":elder_gun: <w elder_gun for details" +
     ":puncher: <w puncher for details"
-  );
+  ); */
 }
