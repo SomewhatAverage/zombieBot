@@ -10,7 +10,7 @@ const prefix = "<";
 
 bot.on('message', message => {
   if (message.author.bot) return;
-  if(message.content.indexOf(config.prefix) !== 0) return;
+  if(message.content.indexOf(prefix) !== 0) return;
   
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
