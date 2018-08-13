@@ -38,4 +38,6 @@ const ez = [
   "With great power... comes a great electricity bill!"
 ];
 
-exports.ezCMD = ez[Math.floor(Math.random() * 37)];
+exports.setMSG = function ezCMD() {
+  return ez[Math.floor(Math.random() * 37)];
+};
