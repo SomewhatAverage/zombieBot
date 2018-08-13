@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 const stringCommands = require("./stringCommands.js");
-const argCommands = require("argCommands.js");
+const argCommands = require("./argCommands.js");
 
 bot.on('ready', () => {
   console.log('Hello World!');
@@ -17,7 +17,7 @@ bot.on('message', message => {
   const command = args.shift().toLowerCase();
   
   if (stringCommands[command]) {
-      message.reply(commands[command]);
+      message.reply(stringCommands[command]);
   } else if (argCommands[command]) {
     
   }
