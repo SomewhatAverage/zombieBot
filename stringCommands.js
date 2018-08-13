@@ -5,7 +5,8 @@ var SwitchOBJ = require("./commands/switch.js");
 var PerksOBJ = require("./commands/perks.js");
 var RoomsOBJ = require("./commands/rooms.js");
 var WeaponsOBJ = require("./commands/weapons.js");
-var zombiesOBJ = require("./commands/zombies.js");
+var ZombiesOBJ = require("./commands/zombies.js");
+var VersionOBJ = require("./commands/version.js");
 
 exports.help = HelpOBJ.helpCMD;
 exports.chest = ChestOBJ.chestCMD;
@@ -14,4 +15,5 @@ exports.switch = SwitchOBJ.switchCMD;
 exports.perks = PerksOBJ.perksCMD;
 exports.rooms = RoomsOBJ.roomsCMD;
 exports.weapons = WeaponsOBJ.weaponsCMD;
-exports.zombies = zombiesOBJ.zombiesCMD;
+exports.zombies = ZombiesOBJ.zombiesCMD;
+exports.version = VersionOBJ.versionCMD;
