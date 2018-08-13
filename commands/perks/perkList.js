@@ -1,4 +1,4 @@
-var extra_health = {
+exports.extra_health = {
   emoji : "<:extra_health:478382875842969611>",
   description : "**",
   price : 1000,
@@ -8,7 +8,7 @@ var extra_health = {
   }
 };
 
-var quick_fire = {
+exports.quick_fire = {
   emoji : "<:quick_fire:478382875910078489>",
   description : "*Increase the fire rate of all guns by 25%.*",
   price : 1000,
@@ -18,7 +18,7 @@ var quick_fire = {
   }
 };
 
-var fast_revive = {
+exports.fast_revive = {
   emoji : "<:fast_revive:478382875838906375>",
   description : "*Revive fallen teammates much faster.*",
   price : 500,
@@ -28,7 +28,7 @@ var fast_revive = {
   }
 };
 
-var extra_weapon = {
+exports.extra_weapon = {
   emoji : "<:extra_weapon:478382875889238026>",
   description : "*Gain an extra weapon slot.*",
   price : 1500,
@@ -38,7 +38,7 @@ var extra_weapon = {
   }
 }
 
-var frozen_bullets = {
+exports.frozen_bullets = {
   emoji : "<:frozen_bullets:478382875872460802>",
   description : "*All your bullets are ice cold, slowing enemies down briefly.*",
   price : 1000,
@@ -49,7 +49,7 @@ var frozen_bullets = {
 }
 
 
-var flame_bullets = {
+exports.flame_bullets = {
   emoji : "<:flame_bullets:478382875465744392>",
   description : "*All your bullets set enemies on fire, including enemies immune to fire.*",
   price : 750,
@@ -59,7 +59,7 @@ var flame_bullets = {
 }
 
 
-var speed = {
+exports.speed = {
   emoji : "<:speed:478382876098822148>",
   description : "*Gain Speed I.*",
   price : 500,
