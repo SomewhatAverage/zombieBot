@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
-const commands = require("./commands.js");
+const stringCommands = require("./stringCommands.js");
+const argCommands = require("argCommands.js");
 
 bot.on('ready', () => {
   console.log('Hello World!');
@@ -15,13 +16,10 @@ bot.on('message', message => {
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   
-  if (commands[command]) {
-    if (command == "w" || command == "p" || command == "r") {
-          
-    } else {
+  if (stringCommands[command]) {
       message.reply(commands[command]);
-    }
+  } else if (argCommands[command]) {
+    
   }
-
 });
   
