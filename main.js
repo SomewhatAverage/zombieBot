@@ -17,9 +17,12 @@ bot.on('message', message => {
   const command = args.shift().toLowerCase();
   
   if (stringCommands[command]) {
-      message.reply(stringCommands[command]);
+      message.channel.send(stringCommands[command]);
   } else if (argCommands[command]) {
     
+  } else {
+	const fluctuatingCommand = require("./commands/" + command + ".js");
+	message.channel.send(fluctuatingCommand.mainCMD());
   }
 });
   
