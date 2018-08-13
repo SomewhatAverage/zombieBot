@@ -1,10 +1,10 @@
 exports.machineCMD = (
   "Everything about the team machine:\n" +
   "- Where is it?\n" +
-  "    > In Dead End: Roof Top\n" +
-  "    > In Bad Blood: Great Hall\n" +
+  "    > In Dead End: **Roof Top**\n" +
+  "    > In Bad Blood: **Great Hall**\n" +
   "- What is its utility? With the team machine you can buy 3 things (at will):\n" +
-  "    > Ammo Supply (arrow) -> refill the ammos all the players.\n" +
-  "    > Full Revive (golden apple) -> Revive all teammates died or knocked down.\n" +
-  "    > Dragon Warth (dragon egg) -> Kill all mobs in a radius of 15 around the team machine, the price increases of 1,000 each time you use it.\n"
-)
+  "    > **Ammo Supply** (arrow) -> refill ammos for all players. (**1000** gold)\n" +
+  "    > **Full Revive** (golden apple) -> Revives all dead or knocked down teammates. (**2000** gold)\n" +
+  "    > **Dragon's Wrath** (dragon egg) -> Kill all mobs in a radius of 15 around the team machine. The price increases of 1,000 per use. (**5000** base gold)"
+);
