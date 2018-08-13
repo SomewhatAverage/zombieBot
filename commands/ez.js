@@ -39,5 +39,5 @@ const ez = [
 ];
 
 exports.mainCMD = function mainCMD() {
-  return ezMSG = ez[Math.floor(Math.random() * 37)];
+  return ez[Math.floor(Math.random() * 37)];
 };
