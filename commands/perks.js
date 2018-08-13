@@ -1,7 +1,7 @@
 exports.perksCMD = (
   ">> Everything about **perks**:\n" +
   "- What is it ? A perk is a **bonus** to help you combat the zombies. However, the perk is **personal**, as it only works for yourself, not for the team.\n" +
-  "- When I want to buy a perk, it does not work. Why? You need to activate the power switch in Power Station for Dead End or the Balcony for Bad Blood.\n" + <switch for details about power switch
+  "- When I want to buy a perk, it does not work. Why? You need to activate the power switch in Power Station for Dead End or the Balcony for Bad Blood. <switch for details about the power switch\n" +
   "- How many perks are there? **7** perks, **7** in Dead End and **6** in Bad Blood (no flame bullets).\n" +
   "- How many perks can I have? You can have up to **3** perks at the same time. If you want to buyan other, but you already have 3 perks, just buy the next perk while holding the one you want to replace.\n" +
   "- Details about a perk? Do **<p name_perk**\n" +
