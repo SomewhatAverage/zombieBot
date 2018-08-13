@@ -1,6 +1,6 @@
 var Perks = require("./perkList.js");
 
-exports.perks = perks(name) {
+exports.perks = function perks(name) {
   var flameBulletException;
   if (!Perks[name]) {
     string invalidPerk = "Please enter a valid perk.\n";
@@ -10,7 +10,7 @@ exports.perks = perks(name) {
       flameBulletException = "";
     } else {
       flameBulletException = (
-       "Location in Bad Blood: **" +
+       "    Location in Bad Blood: **" +
         Perks[name].location.badBlood +
        "**\n"
       );
@@ -18,7 +18,7 @@ exports.perks = perks(name) {
     
     var completedString = (
       Perks[name].emoji +
-      " **" + name + "**\n" +
+      " **" + Perks[name]name + "**\n" +
       "**Description:** "+ Perks[name].description + "\n" +
       "**How to obtain it?**\n" +
       "    Price: **" + Perks[name].price + "** gold\n" +
