@@ -1,7 +1,7 @@
 exports.extra_health = {
   emoji : "<:extra_health:478382875842969611>",
   name : "Extra Health",
-  description : "**",
+  description : "",
   price : 1000,
   location : {
     deadEnd : "Roof Top",
