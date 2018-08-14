@@ -1,4 +1,4 @@
-var Perks = require("./perkList.js");
+const Perks = require("./perkList.js");
 
 exports.perks = function perks(name) {
   var flameBulletException;

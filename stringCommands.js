@@ -1,19 +1,26 @@
-var HelpOBJ = require("./commands/help.js");
-var ChestOBJ = require("./commands/chest.js");
-var MachineOBJ = require("./commands/machine.js");
-var SwitchOBJ = require("./commands/switch.js");
-var PerksOBJ = require("./commands/perks.js");
-var RoomsOBJ = require("./commands/rooms.js");
-var WeaponsOBJ = require("./commands/weapons.js");
-var ZombiesOBJ = require("./commands/zombies.js");
-var VersionOBJ = require("./commands/version.js");
+const fs = require("fs");
+const ezMod = require("./commands/ez.js");
 
-exports.help = HelpOBJ.helpCMD;
-exports.chest = ChestOBJ.chestCMD;
-exports.machine = MachineOBJ.machineCMD;
-exports.switch = SwitchOBJ.switchCMD;
-exports.perks = PerksOBJ.perksCMD;
-exports.rooms = RoomsOBJ.roomsCMD;
-exports.weapons = WeaponsOBJ.weaponsCMD;
-exports.zombies = ZombiesOBJ.zombiesCMD;
-exports.version = VersionOBJ.versionCMD;
+module.exports = {
+  help : readFile("help"),
+  chest : readFile("chest"),
+  machine : readFile("machine"),
+  switch : readFile("switch"),
+  perks : readFile("perks"),
+  rooms : readFile("rooms"),
+  weapons : readFile("weapons"),
+  zombies : readFile("zombies"),
+  version : readFile("version"),
+  ez : function() {
+    var ezIndex = Math.floor(Math.random()*(36));
+    var ezResult = ezMod.generateResponse(ezIndex);
+    return ezResult;
+  }
+}
+
+function readFile(variable) {
+  fs.readFile("./commands/text_commands/" + variable + ".txt", "utf8", function (err, data) {
+    if (err) throw (err);
+    module.exports[variable] = data;
+  })
+}

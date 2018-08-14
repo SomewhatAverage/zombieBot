@@ -1,7 +1,7 @@
 const fs = require("fs");
 const reportFile = "./data/lastReport.txt";
 
-exports.report = function report(authorid, args) {
+exports.report = function (authorid, args) {
   var type;
   args[0] == "bug" || args[0] == "text" ? args[0] == "bug" ? "bug" : "text" : type = "invalid";
   if (type != "invalid") {

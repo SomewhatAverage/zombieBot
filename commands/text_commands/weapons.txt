@@ -1,0 +1,26 @@
+>> Everything about **weapons**:
+- Weapons are there to help you kill zombies. You have a lot of different weapons to pick.
+- You can also ultimate your weapons at the ultimate machine:
+Cost : **1500** gold
+    Location in Dead End: **Garden**
+    Location in Bad Blood: **Graveyard**
+    You can upgrade a weapon only once, except the Gold Digger (you can upgrade it 5 times, being the only weapon that you can upgrade more than 1 time)
+- In the first slot you have your knife. It is your starter melee weapon. You can only replace it with The Puncher.
+- You can have up to 2 guns. With extra weapon perk you can have 1 more slot: <p extra_weapon for details.
+- If you already have all your gun slots filled and if you want to buy a new gun, you need to replace one of those you have by buying your new gun while holding the one you want to replace.
+- Details about a weapon? **<w name_weapon**
+
+>> List of all the weapons in Zombies:
+<:pistol:478295712946323460> **<w pistol** for details
+<:rifle:478295713051181086> **<w rifle** for details
+<:shotgun:478295713285931009> **<w shotgun** for details
+<:flamethrower:478295712887472132> **<w flamethrower** for details
+<:zombie_soaker:478295712745127987> **<w zombie_soaker** for details
+<:sniper:478295713009238016> **<w sniper** for details
+<:rocket_launcher:478295713139130379> **<w rocket_launcher** for details
+<:blow_dart:478295713252507671> **<w blow_dart** for details
+<:gold_digger:478295712971489300> **<w gold_digger** for details
+<:zombie_zapper:478295712958906377> **<w zombie_zapper** for details
+<:elder_gun:478295713034403853> **<w elder_gun** for details
+<:sword:478295712929546240> **<w knife** for details
+<:puncher:478295713055506434> **<w puncher** for details\n

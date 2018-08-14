@@ -1,4 +1,4 @@
-const ez = [
+const ezList = [
   "Doin a bamboozle fren.",
   "I need help, teach me how to play!",
   "Let's be friends instead of fighting okay?",
@@ -38,6 +38,6 @@ const ez = [
   "With great power... comes a great electricity bill!"
 ];
 
-exports.mainCMD = function mainCMD() {
-  return ez[Math.floor(Math.random() * 37)];
+exports.generateResponse = function(index) {
+  return ezList[index]; 
 };

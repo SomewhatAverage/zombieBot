@@ -1,3 +1,15 @@
+const http = require('http');
+const express = require('express');
+const app = express();
+app.get("/", (request, response) => {
+  console.log(Date.now() + " Ping Received");
+  response.sendStatus(200);
+});
+app.listen(process.env.PORT);
+setInterval(() => {
+  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
+}, 280000);
+
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 const stringCommands = require("./stringCommands.js");
@@ -20,13 +32,14 @@ bot.on('message', message => {
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   
-  if (stringCommands[command]) {
-    message.channel.send(stringCommands[command]);
+  if (typeof stringCommands[command] != "undefined") {
+    if (typeof stringCommands[command] == "function") {
+      message.channel.send(stringCommands[command]());
+    } else {
+      message.channel.send(stringCommands[command]);
+    }
   } else if (argCommands[command]) {
     message.channel.send(argCommands[command](message, args));
-  } else {
-		const fluctuatingCommand = require("./commands/" + command + ".js");
-		message.channel.send(fluctuatingCommand.mainCMD());
   }
   
   fs.readFile(reportPath, "utf8", function (err, data) {
@@ -38,13 +51,14 @@ bot.on('message', message => {
         .catch((err) => {
           console.log(err);
         });
+      
+        fs.writeFile(reportPath, "", function (err) {
+        if (err) throw (err);
+      });
     }
     
-    fs.writeFile(reportPath, "", function (err) {
-      if (err) throw (err);
-    });
+    
     
   });
-  
 });
 bot.login(process.env.BOT_TOKEN);

@@ -1,0 +1,15 @@
+>> Everything about **perks**:
+- What is it ? A perk is a **bonus** to help you combat the zombies. However, the perk is **personal**, as it only works for yourself, not for the team.
+- When I want to buy a perk, it does not work. Why? You need to activate the power switch in Power Station for Dead End or the Balcony for Bad Blood. <switch for details about the power switch
+- How many perks are there? **7** perks, **7** in Dead End and **6** in Bad Blood (no flame bullets).
+- How many perks can I have? You can have up to **3** perks at the same time. If you want to buyan other, but you already have 3 perks, just buy the next perk while holding the one you want to replace.
+- Details about a perk? Do **<p name_perk**
+
+>> List of all the perks in Zombies:
+<:extra_health:478382875842969611> **<p extra_health** for details
+<:quick_fire:478382875910078489> **<p quick_fire** for details
+<:fast_revive:478382875838906375> **<p fast_revive** for details
+<:extra_weapon:478382875889238026> **<p extra_weapon** for details
+<:frozen_bullets:478382875872460802> **<p frozen_bullets** for details
+<:flame_bullets:478382875465744392> **<p flame_bullets** for details
+<:speed:478382876098822148> **<p speed** for details

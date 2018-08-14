@@ -1,0 +1,17 @@
+Everything about the weapons chest:
+- What is it? The weapons chest is a chest that you can roll to get new weapons.
+- Price? Each roll costs **1000** gold.
+- Does it TP? After few rolls the weapons chest will be "teleported" to an other room which has a chest in it. It is normal.
+- How can I know in which room the chest is?
+> You can see the "Weapon chest" through walls (it's an armor stand name) and guess in which room it is.
+> Right click on the chest will tell you in which room it is currently located.
+> Outside you have a purple beacon which indicates the location of the chest.
+- Is there a limit to the rolls? No, you can roll as many times as you want. However, every 5 rolls, the chest will "teleport".
+- Which weapons can I obtain from it ?
+<:flamethrower:478295712887472132> **<w flamethrower** for details
+<:zombie_soaker:478295712745127987> **<w zombie_soaker** for details
+<:blow_dart:478295713252507671> **<w blow_dart** for details
+<:gold_digger:478295712971489300> **<w gold_digger** for details
+<:zombie_zapper:478295712958906377> **<w zombie_zapper** for details
+<:elder_gun:478295713034403853> **<w elder_gun** for details
+<:puncher:478295713055506434> **<w puncher** for details
